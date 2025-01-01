@@ -1,0 +1,669 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local f3xmenu = Instance.new("ScreenGui")
+local canvas = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Baseplate = Instance.new("Frame")
+local fix = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Clear = Instance.new("Frame")
+local fix_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local Refresh = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local RemoveMesh = Instance.new("Frame")
+local fix_3 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local ColorAll = Instance.new("Frame")
+local fix_4 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+
+--Properties:
+
+f3xmenu.Name = "f3x menu"
+f3xmenu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+f3xmenu.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+f3xmenu.ResetOnSpawn = false
+
+canvas.Name = "canvas"
+canvas.Parent = f3xmenu
+canvas.AnchorPoint = Vector2.new(0.5, 0.5)
+canvas.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+canvas.BackgroundTransparency = 1.000
+canvas.BorderColor3 = Color3.fromRGB(0, 0, 0)
+canvas.BorderSizePixel = 0
+canvas.Position = UDim2.new(0.5, 0, 0.5, 0)
+canvas.Size = UDim2.new(1, 0, 1, 0)
+
+TextButton.Parent = canvas
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.957537293, 0, 0.252455622, 0)
+TextButton.Size = UDim2.new(0, 45, 0, 31)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "<"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 72.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner.Parent = TextButton
+
+Baseplate.Name = "Baseplate"
+Baseplate.Parent = canvas
+Baseplate.AnchorPoint = Vector2.new(0.5, 0.5)
+Baseplate.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Baseplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Baseplate.BorderSizePixel = 0
+Baseplate.Position = UDim2.new(0.943287253, 0, 0.312895656, 0)
+Baseplate.Size = UDim2.new(0.111776926, 0, 0.0452760532, 0)
+
+fix.Name = "fix"
+fix.Parent = Baseplate
+fix.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fix.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fix.BorderSizePixel = 0
+fix.Position = UDim2.new(0.040002428, 0, 0.117269337, 0)
+fix.Size = UDim2.new(0, 110, 0, 27)
+fix.Font = Enum.Font.SourceSans
+fix.Text = "Baseplate"
+fix.TextColor3 = Color3.fromRGB(0, 0, 0)
+fix.TextSize = 29.000
+
+UICorner_2.Parent = fix
+
+UICorner_3.CornerRadius = UDim.new(0, 15)
+UICorner_3.Parent = Baseplate
+
+Clear.Name = "Clear"
+Clear.Parent = canvas
+Clear.AnchorPoint = Vector2.new(0.5, 0.5)
+Clear.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.942360461, 0, 0.357395023, 0)
+Clear.Size = UDim2.new(0.111776926, 0, 0.0452760532, 0)
+
+fix_2.Name = "fix"
+fix_2.Parent = Clear
+fix_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fix_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fix_2.BorderSizePixel = 0
+fix_2.Position = UDim2.new(0.040002428, 0, 0.117269337, 0)
+fix_2.Size = UDim2.new(0, 110, 0, 27)
+fix_2.Font = Enum.Font.SourceSans
+fix_2.Text = "Clear"
+fix_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+fix_2.TextSize = 29.000
+
+UICorner_4.Parent = fix_2
+
+UICorner_5.CornerRadius = UDim.new(0, 15)
+UICorner_5.Parent = Clear
+
+Refresh.Name = "Refresh"
+Refresh.Parent = canvas
+Refresh.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Refresh.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Refresh.BorderSizePixel = 0
+Refresh.Position = UDim2.new(0.891870141, 0, 0.252455622, 0)
+Refresh.Size = UDim2.new(0, 70, 0, 31)
+Refresh.Font = Enum.Font.SourceSans
+Refresh.Text = "Refresh"
+Refresh.TextColor3 = Color3.fromRGB(255, 255, 255)
+Refresh.TextSize = 25.000
+Refresh.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_6.Parent = Refresh
+
+RemoveMesh.Name = "Remove Mesh"
+RemoveMesh.Parent = canvas
+RemoveMesh.AnchorPoint = Vector2.new(0.5, 0.5)
+RemoveMesh.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+RemoveMesh.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RemoveMesh.BorderSizePixel = 0
+RemoveMesh.Position = UDim2.new(0.942360461, 0, 0.401894391, 0)
+RemoveMesh.Size = UDim2.new(0.111776926, 0, 0.0452760532, 0)
+
+fix_3.Name = "fix"
+fix_3.Parent = RemoveMesh
+fix_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fix_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fix_3.BorderSizePixel = 0
+fix_3.Position = UDim2.new(0.040002428, 0, 0.117269337, 0)
+fix_3.Size = UDim2.new(0, 110, 0, 27)
+fix_3.Font = Enum.Font.SourceSans
+fix_3.Text = "Kill Mesh"
+fix_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+fix_3.TextSize = 29.000
+
+UICorner_7.Parent = fix_3
+
+UICorner_8.CornerRadius = UDim.new(0, 15)
+UICorner_8.Parent = RemoveMesh
+
+ColorAll.Name = "Color All"
+ColorAll.Parent = canvas
+ColorAll.AnchorPoint = Vector2.new(0.5, 0.5)
+ColorAll.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+ColorAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ColorAll.BorderSizePixel = 0
+ColorAll.Position = UDim2.new(0.942360461, 0, 0.446393788, 0)
+ColorAll.Size = UDim2.new(0.111776926, 0, 0.0452760532, 0)
+
+fix_4.Name = "fix"
+fix_4.Parent = ColorAll
+fix_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fix_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fix_4.BorderSizePixel = 0
+fix_4.Position = UDim2.new(0.040002428, 0, 0.117269337, 0)
+fix_4.Size = UDim2.new(0, 110, 0, 27)
+fix_4.Font = Enum.Font.SourceSans
+fix_4.Text = "Color All"
+fix_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+fix_4.TextSize = 29.000
+
+UICorner_9.Parent = fix_4
+
+UICorner_10.CornerRadius = UDim.new(0, 15)
+UICorner_10.Parent = ColorAll
+
+-- Scripts:
+
+local function JILIIP_fake_script() -- f3xmenu.new script 
+	local script = Instance.new('LocalScript', f3xmenu)
+
+	local screenGui = script.Parent
+	local bp = screenGui:WaitForChild("canvas"):WaitForChild("Baseplate")
+	local cl = screenGui:WaitForChild("canvas"):WaitForChild("Clear")
+	local rm = screenGui:WaitForChild("canvas"):WaitForChild("Remove Mesh")
+	local ca = screenGui:WaitForChild("canvas"):WaitForChild("Color All")
+	local collapse = screenGui:WaitForChild("canvas"):WaitForChild("TextButton")
+	local refresh = screenGui:WaitForChild("canvas"):WaitForChild("Refresh")
+	local prefix = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("HDAdminGUIs").MainFrame.Pages.Settings.Custom["AE1 Prefix"].SettingValue.TextBox.Text
+	local player = game.Players.LocalPlayer
+	local char = player.Character
+	local tool
+	
+	function cmd(cmd)
+		local args = {
+			[1] = cmd
+		}
+	
+		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+	end
+	
+	local function toggle()
+		if frame.Visible == false then
+			frame.Visible = true
+			frame2.Visible = true
+			collapse.Text = "<"
+		else
+			frame.Visible = false
+			frame2.Visible = false
+			collapse.Text = ">"
+		end
+	end
+	
+	task.wait(cmd(prefix.."btools"))
+	wait()
+	for i,v in player:GetDescendants() do
+		if v.Name == "SyncAPI" then
+			tool = v.Parent
+		end
+	end
+	remote = tool:WaitForChild("SyncAPI"):WaitForChild("ServerEndpoint")
+	
+	function _(args)
+		remote:InvokeServer(unpack(args))
+	end
+	
+	local function SetCollision(part,boolean)
+		local args = {
+			[1] = "SyncCollision",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["CanCollide"] = boolean
+				}
+			}
+		}
+		_(args)
+	end
+	local function SetAnchor(boolean,part)
+		local args = {
+			[1] = "SyncAnchor",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Anchored"] = boolean
+				}
+			}
+		}
+		_(args)
+	end
+	local function CreatePart(type,cf,parent)
+		local args = {
+			[1] = "CreatePart",
+			[2] = type,
+			[3] = cf,
+			[4] = parent
+		}
+		_(args)
+	end
+	local function Destroy(part)
+		local args = {
+			[1] = "Remove",
+			[2] = {
+				[1] = part
+			}
+		}
+		_(args)
+	end
+	local function Clone(part)
+		local args = {
+			[1] = "Clone",
+			[2] = {
+				[1] = part
+			},
+			[3] = part.Parent
+		}
+		_(args)
+	end
+	local function MovePart(part,cf)
+		local args = {
+			[1] = "SyncMove",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["CFrame"] = cf
+				}
+			}
+		}
+		_(args)
+	end
+	local function Resize(part,size,cf)
+		local args = {
+			[1] = "SyncResize",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["CFrame"] = cf,
+					["Size"] = size
+				}
+			}
+		}
+		_(args)
+	end
+	local function AddMesh(part)
+		local args = {
+			[1] = "CreateMeshes",
+			[2] = {
+				[1] = {
+					["Part"] = part
+				}
+			}
+		}
+		_(args)
+	end
+	
+	local function SetMesh(part,meshid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["MeshId"] = "rbxassetid://"..meshid
+				}
+			}
+		}
+		_(args)
+	end
+	local function SetMeshType(part,type)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["MeshType"] = type
+				}
+			}
+		}
+		_(args)
+	end
+	local function SetTexture(part, type, texid)
+		local args = {
+			[1] = "SyncTexture",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Face"] = Enum.NormalId.Top,
+					["TextureType"] = type,
+					["Texture"] = texid
+				}
+			}
+		}
+		_(args)
+	end
+	local function SetTextureOpacity(part,op)
+		local args = {
+			[1] = "SyncTexture",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Face"] = Enum.NormalId.Top,
+					["TextureType"] = "Texture",
+					["Transparency"] = op
+				}
+			}
+		}
+		_(args)
+	end
+	local function SetTextureStudsU(part,studs)
+		local args = {
+			[1] = "SyncTexture",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Face"] = Enum.NormalId.Top,
+					["TextureType"] = "Texture",
+					["StudsPerTileU"] = studs
+				}
+			}
+		}
+		_(args)
+	end
+	local function SetTextureStudsV(part,studs)
+		local args = {
+			[1] = "SyncTexture",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Face"] = Enum.NormalId.Top,
+					["TextureType"] = "Texture",
+					["StudsPerTileV"] = studs
+				}
+			}
+		}
+		_(args)
+	end
+	local function CreateTexture(part)
+		local args = {
+			[1] = "CreateTextures",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Face"] = Enum.NormalId.Top,
+					["TextureType"] = "Texture"
+				}
+			}
+		}
+		_(args)
+	end
+	local function CreateDecal(part)
+		local args = {
+			[1] = "CreateTextures",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Face"] = Enum.NormalId.Top,
+					["TextureType"] = "Decal"
+				}
+			}
+		}
+		_(args)
+	end
+	local function SetName(part, stringg)
+		local args = {
+			[1] = "SetName",
+			[2] = {
+				[1] = part
+			},
+			[3] = stringg
+		}
+	
+		_(args)
+	end
+	local function MeshResize(part,size)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Scale"] = size
+				}
+			}
+		}
+		_(args)
+	end
+	local function Weld(part1, part2,lead)
+		local args = {
+			[1] = "CreateWelds",
+			[2] = {
+				[1] = part1,
+				[2] = part2
+			},
+			[3] = lead
+		}
+		_(args)
+	
+	end
+	local function SetLocked(part,boolean)
+		local args = {
+			[1] = "SetLocked",
+			[2] = {
+				[1] = part
+			},
+			[3] = boolean
+		}
+		_(args)
+	end
+	local function SetTrans(part,int)
+		local args = {
+			[1] = "SyncMaterial",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Transparency"] = int
+				}
+			}
+		}
+		_(args)
+	end
+	local function CreateSpotlight(part)
+		local args = {
+			[1] = "CreateLights",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["LightType"] = "SpotLight"
+				}
+			}
+		}
+		_(args)
+	end
+	local function SetMaterial(part,mat)
+		local args = {
+			[1] = "SyncMaterial",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Material"] = mat
+				}
+			}
+		}
+		_(args)
+	end
+	local function SyncLighting(part,brightness)
+		local args = {
+			[1] = "SyncLighting",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["LightType"] = "SpotLight",
+					["Brightness"] = brightness
+				}
+			}
+		}
+		_(args)
+	end
+	local function Color(part,color)
+		local args = {
+			[1] = "SyncColor",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Color"] = color --[[Color3]],
+					["UnionColoring"] = false
+				}
+			}
+		}
+		_(args)
+	end
+	
+	
+	local function colorall()
+		local startTime = os.clock()
+	
+		for i,v in game.Workspace:GetDescendants() do
+			if v:IsA("BasePart") then
+				if v.Name == player.Name or v.Parent == player.Character then
+					--print(v.Name)
+				else
+					clr = task.spawn(function()
+						Color(v,Color3.fromRGB(math.random(1,255), math.random(1,255), math.random(1,255)))
+						--warn(v)
+					end)
+				end
+			end
+		end
+		task.cancel(clr)
+		local endTime = os.clock()
+		local timeElapsed = endTime - startTime
+		print("Time: "..(timeElapsed))
+	end
+	
+	local function removemeshes()
+		local startTime = os.clock()
+		for i,v in game.Workspace:GetDescendants() do
+			if v:IsA("BasePart") then
+				if v.Name == player.Name or v.Parent == player.Character or v.Name == "Handle" or v.Name == "Head" then
+					--print(v.Name)
+				else
+					for _, child in v:GetChildren() do
+						if child:IsA("MeshPart") or child:IsA("SpecialMesh") then
+							wait(0.03)
+							rmm = task.spawn(function()
+								Destroy(child)
+								--warn(v)
+							end)
+							task.cancel(rmm)
+						end
+					end
+				end
+			end
+		end
+		local endTime = os.clock()
+		local timeElapsed = endTime - startTime
+		print("Time: "..(timeElapsed))
+	end
+	
+	local function clear()
+		local startTime = os.clock()
+		for i,v in game.Workspace:GetDescendants() do
+			if v:IsA("BasePart") or v:IsA("Model") or v:IsA("SpawnLocation") or v:IsA("Folder") then
+				if v.Name == player.Name or v.Parent == player.Character or v.Name == "Handle" or v.Name == "Head" then
+					print(v.Name)
+				else
+					dest = task.spawn(function()
+					if v:IsA("Part") or v:IsA("Model") or v:IsA("SpawnLocation") or v:IsA("Folder") then
+						Destroy(v)
+						warn(v)
+						end
+					end)
+				end
+			end
+		end
+			local endTime = os.clock()
+			local timeElapsed = endTime - startTime
+			print("Time taken: "..(timeElapsed))
+			task.cancel(dest)
+	end
+	
+	local function createbaseplate()
+		local startTime = os.clock()
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("SpawnLocation") then
+					replace = task.spawn(function()
+						Destroy(v)
+						warn(v)
+					end)
+					task.cancel(replace)
+				end
+			end
+	
+			wait()
+			CreatePart("Normal",CFrame.new(1,-900,1)*CFrame.Angles(0,0,0), workspace)
+			local baseplate = game.Workspace.Part
+			Clone(baseplate)
+			SetName(baseplate, "Baseplate")
+			CreatePart("Spawn",CFrame.new(1,1,1)*CFrame.Angles(0,0,0), workspace)
+			local spawn = game.Workspace.SpawnLocation
+			SetName(spawn, "Spawn")
+			--spawnpoint
+			Resize(spawn,Vector3.new(12,.2,12),CFrame.new(5000,251.2,1)*CFrame.Angles(0,0,0))
+			Color(spawn,Color3.fromRGB(33, 14, 238))
+			SetTrans(spawn,.2)
+			CreateDecal(spawn)
+			SetTexture(spawn,"Decal","rbxasset://textures/SpawnLocation.png")
+			SetMaterial(spawn, Enum.Material.ForceField)
+			SetCollision(spawn,false)
+			SetLocked(spawn,true)
+			for i,v in baseplate:GetChildren() do
+				if v:IsA("SpecialMesh") or v:IsA("MeshPart") then
+					Destroy(v)
+				end
+			end
+			--baseplate
+			CreateTexture(baseplate)
+			SetTexture(baseplate,"Texture","rbxassetid://6372755229")
+			SetTextureOpacity(baseplate,.8)
+			SetTextureStudsU(baseplate,8)
+			SetTextureStudsV(baseplate,8)
+			Resize(baseplate,Vector3.new(4000,500,4000),CFrame.new(5000,1,1)*CFrame.Angles(0,0,0))
+			Color(baseplate,Color3.fromRGB(14, 109, 12))
+			SetLocked(baseplate, true)
+		local endTime = os.clock()
+		local timeElapsed = endTime - startTime
+		print("Time: "..(timeElapsed))
+		wait()
+		cmd(prefix.."savemap")
+	end
+	
+	
+	cl.fix.MouseButton1Click:Connect(clear)
+	bp.fix.MouseButton1Click:Connect(createbaseplate)
+	ca.fix.MouseButton1Click:Connect(colorall)
+	rm.fix.MouseButton1Click:Connect(removemeshes)
+	
+end
+coroutine.wrap(JILIIP_fake_script)()
+local function WPARLYY_fake_script() -- f3xmenu.refresh 
+	local script = Instance.new('LocalScript', f3xmenu)
+
+	local refresh = script.Parent.canvas.Refresh
+	local function refresh()
+		
+	end
+	
+	refresh.MouseButton1Click:Connect(refresh)
+end
+coroutine.wrap(WPARLYY_fake_script)()
