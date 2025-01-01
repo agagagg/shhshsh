@@ -659,11 +659,11 @@ coroutine.wrap(JILIIP_fake_script)()
 local function WPARLYY_fake_script() -- f3xmenu.refresh 
 	local script = Instance.new('LocalScript', f3xmenu)
 
-	local refresh = script.Parent.canvas.Refresh
+	local ref = script.Parent.canvas.Refresh
 	local function refresh()
 		
 	end
 	
-	refresh.MouseButton1Click:Connect(refresh)
+	ref.MouseButton1Click:Connect(refresh)
 end
 coroutine.wrap(WPARLYY_fake_script)()
